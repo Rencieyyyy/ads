@@ -34,6 +34,15 @@ $$('.tabs button').forEach(b=>b.addEventListener('click',()=>{
   $$('.panel').forEach(p=>p.hidden=p.id!==b.dataset.tab);
 }));
 
+// subscription plans: reveal included features on selection
+$$('.plan-toggle').forEach(button=>button.addEventListener('click',()=>{
+  const expanded=button.getAttribute('aria-expanded')==='true';
+  const features=$('#'+button.getAttribute('aria-controls'));
+  button.setAttribute('aria-expanded',String(!expanded));
+  features.hidden=expanded;
+  $('.plan-action span:first-child',button).textContent=expanded?'View included features':'Hide included features';
+}));
+
 // video: autoplay (muted, as browsers require) when visible, pause when scrolled away
 const promo=$('#promo'), box=$('#videoBox');
 let userPaused=false;

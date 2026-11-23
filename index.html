@@ -46,7 +46,7 @@
 <section class="stats wrap">
   <div><b data-count="0" data-prefix="₱">0</b><span>to start selling</span></div>
   <div><b data-count="4">0</b><span>livestock categories</span></div>
-  <div><b data-count="3">0</b><span>plans to fit your farm</span></div>
+  <div><b data-count="4">0</b><span>plans to fit your farm</span></div>
   <div><b data-count="1">0</b><span>app for buyers and sellers</span></div>
 </section>
 
@@ -86,10 +86,10 @@
   <h2>See AniMart in action</h2>
   <p class="sub">Real screens from the app: browse, sell, choose a plan and manage your account.</p>
   <div class="shots">
-    <figure class="reveal"><img src="assets/screen-1.png" alt="Browse livestock"><figcaption><b>Browse livestock</b>Search and filter by category, or jump in as a buyer or seller.</figcaption></figure>
-    <figure class="reveal"><img src="assets/screen-2.png" alt="Become a seller"><figcaption><b>Become a seller</b>Set up your shop or farm and start listing in minutes.</figcaption></figure>
-    <figure class="reveal"><img src="assets/screen-3.png" alt="Choose your plan"><figcaption><b>Choose your plan</b>Start free, or upgrade to post listings and message buyers.</figcaption></figure>
-    <figure class="reveal"><img src="assets/screen-4.png" alt="Your profile"><figcaption><b>Your profile</b>See your listings and sales, and manage your account.</figcaption></figure>
+    <figure class="reveal"><img src="landing.png" alt="Browse livestock"><figcaption><b>Browse livestock</b>Search and filter by category, or jump in as a buyer or seller.</figcaption></figure>
+    <figure class="reveal"><img src="seller.png" alt="Become a seller"><figcaption><b>Become a seller</b>Set up your shop or farm and start listing in minutes.</figcaption></figure>
+    <figure class="reveal"><img src="subs.png" alt="Choose your plan"><figcaption><b>Choose your plan</b>Start free, or upgrade to post listings and message buyers.</figcaption></figure>
+    <figure class="reveal"><img src="profile.png" alt="Your profile"><figcaption><b>Your profile</b>See your listings and sales, and manage your account.</figcaption></figure>
   </div>
 </section>
 
@@ -105,12 +105,14 @@
 </section>
 
 <!-- PLANS -->
-<section class="sec wrap" id="plans">
-  <h2>Start free. Upgrade when you grow.</h2>
+<section class="sec wrap" id="plans" aria-labelledby="plans-title">
+  <h2 id="plans-title">Plans that grow with your farm</h2>
+  <p class="sub">Choose a plan to see what's included. All prices are in Philippine pesos.</p>
   <div class="grid plans">
-    <article class="card reveal"><h3>Free</h3><p class="price">₱0<small>/mo</small></p><p>Basic browsing, view listings.</p></article>
-    <article class="card pop reveal"><h3>Premium</h3><p class="price">₱199<small>/mo</small></p><p>Post listings, buyer messaging.</p></article>
-    <article class="card reveal"><h3>Super Premium</h3><p class="price">₱499<small>/mo</small></p><p>All features plus priority support.</p></article>
+    <article class="plan-card reveal"><button class="plan-toggle" id="plan-basic-toggle" type="button" aria-expanded="false" aria-controls="plan-basic-features"><span class="plan-heading"><span class="plan-name">Animart Basic</span><span class="plan-tag">Free trial</span></span><span class="price">&#8369;0</span><span class="plan-term">1 month &middot; up to 3 listings</span><span class="plan-action"><span>View included features</span><span class="plan-chevron" aria-hidden="true">&#8964;</span></span></button><ul class="plan-features" id="plan-basic-features" aria-labelledby="plan-basic-toggle" hidden><li>1 month free</li><li>Up to 3 listings</li></ul></article>
+    <article class="plan-card plan-featured reveal"><button class="plan-toggle" id="plan-essential-toggle" type="button" aria-expanded="false" aria-controls="plan-essential-features"><span class="plan-heading"><span class="plan-name">Animart Essential</span><span class="plan-tag">Popular</span></span><span class="price">&#8369;99</span><span class="plan-term">1 week subscription &middot; up to 10 active listings</span><span class="plan-action"><span>View included features</span><span class="plan-chevron" aria-hidden="true">&#8964;</span></span></button><ul class="plan-features" id="plan-essential-features" aria-labelledby="plan-essential-toggle" hidden><li>Up to 10 active listings</li><li>Verified seller badge</li><li>Basic analytics report</li><li>Priority listing placement</li><li>Chat support</li></ul></article>
+    <article class="plan-card reveal"><button class="plan-toggle" id="plan-pro-toggle" type="button" aria-expanded="false" aria-controls="plan-pro-features"><span class="plan-heading"><span class="plan-name">Animart Pro</span></span><span class="price">&#8369;299</span><span class="plan-term">1 month subscription &middot; unlimited active listings</span><span class="plan-action"><span>View included features</span><span class="plan-chevron" aria-hidden="true">&#8964;</span></span></button><ul class="plan-features" id="plan-pro-features" aria-labelledby="plan-pro-toggle" hidden><li>Unlimited active listings</li><li>Verified seller badge</li><li>Full analytics suite</li><li>Priority listing placement</li><li>Chat support</li></ul></article>
+    <article class="plan-card reveal"><button class="plan-toggle" id="plan-elite-toggle" type="button" aria-expanded="false" aria-controls="plan-elite-features"><span class="plan-heading"><span class="plan-name">Animart Elite</span><span class="plan-tag plan-tag-premium">Top tier</span></span><span class="price">&#8369;2,999</span><span class="plan-term">1 year subscription &middot; unlimited active listings</span><span class="plan-action"><span>View included features</span><span class="plan-chevron" aria-hidden="true">&#8964;</span></span></button><ul class="plan-features" id="plan-elite-features" aria-labelledby="plan-elite-toggle" hidden><li>Unlimited active listings</li><li>Verified + Super premium badge</li><li>Full analytics suite</li><li>Top listing placement</li><li>Featured on homepage banner</li><li>Chat support</li></ul></article>
   </div>
 </section>
 
